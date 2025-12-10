@@ -5,10 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Salawaat Takseem - Download</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet" />
+    <!-- site favicon / website logo -->
+    <link rel="icon" href="logo.png" type="image/png" />
     <style>
         :root {
             color-scheme: only light;
         }
+        /* site badge (small website link under subtitle) */
+        .site-link {
+            display: inline-flex;
+            gap: 10px;
+            align-items: center;
+            text-decoration: none;
+            color: #4e1f00;
+            background: rgba(255,255,255,0.22);
+            padding: 8px 12px;
+            border-radius: 12px;
+            border: 1px solid rgba(255,255,255,0.28);
+            box-shadow: 0 8px 18px rgba(0,0,0,0.12), inset 0 1px 0 rgba(255,255,255,0.06);
+            font-weight: 600;
+            margin: 0 auto 18px;
+        }
+
+        .site-link svg { width: 18px; height: 18px; fill: currentColor; }
+        .site-link:hover { transform: translateY(-3px); box-shadow: 0 14px 30px rgba(0,0,0,0.16); }
 
         html, body {
             height: auto;
@@ -342,6 +362,7 @@
                 flex-direction: column;
                 align-items: center;
                 gap: 18px;
+                
             }
         }
     </style>
@@ -353,6 +374,7 @@
 
             <h1>Salawaat Takseem</h1>
             <p class="subtitle">Download</p>
+
             <div class="divider"></div>
 
             <ul class="description">    
@@ -363,17 +385,6 @@
             </ul>
 
             <div class="download-section">
-                <a href="https://salawaattakhseem.github.io/salwaat-takhseem/" download class="download-btn" target="_blank" rel="noopener">
-
-                    <svg viewBox="0 0 24 24" aria-hidden="true">
-                        <path d="M16.365 1.43c0 1.14-.424 2.19-1.093 3.02-.69.85-1.823 1.5-2.95 1.42-.14-1.12.464-2.22 1.116-3.03.74-.92 1.992-1.61 2.927-1.41zm3.535 16.28c-.514 1.17-.758 1.69-1.414 2.72-.916 1.41-2.206 3.18-3.797 3.19-1.414.01-1.776-.93-3.7-.92-1.925.01-2.325.94-3.74.93-1.59-.01-2.807-1.6-3.723-3.01-2.56-4.02-2.83-8.73-1.252-11.22 1.125-1.78 2.913-2.83 4.58-2.83 1.699 0 2.77.95 4.18.95 1.37 0 2.21-.95 4.15-.95 1.58 0 3.255.86 4.38 2.35-3.84 2.09-3.22 7.54.34 9.69z" />
-                    </svg>
-                    <div class="btn-text">
-                        <span class="btn-label">Access on</span>
-                        <span class="btn-platform">Website</span>
-                    </div>
-                </a>
-
                 <a href="https://drive.google.com/file/d/15ET99cZ1AL9FDt_WnqIawOAi5DjAvUmJ/view?usp=sharing" 
                         download 
                         class="download-btn" 
@@ -388,7 +399,19 @@
                         <span class="btn-platform">Android</span>
                     </div>
                 </a>
-            </div>
+ 
+                <!-- changed: this button now redirects to a website instead of downloading.
+                     Replace the href with your actual website URL -->
+                <a href="https://salawaattakhseem.github.io/salwaat-takhseem/" class="download-btn" target="_blank" rel="noopener">
+
+                    <!-- globe icon for website -->
+                    <img src="logo.png" alt="Website Icon" style="width:50px; height:50px; border-radius: 16px;" />
+                    <div class="btn-text">
+                        <span class="btn-label">Open</span>
+                        <span class="btn-platform">Website</span>
+                     </div>
+                 </a>
+             </div>
 
             <div class="features">
                 <div class="feature">
@@ -424,10 +447,9 @@
             </div>
             <div class="copyright">
                 <!-- © Salawaat Takseem 2025. All Rights Reserved. -->
-                © Salawaat Takseem 2025.
+                © Salawaat Takseem 2025
             </div>
         </footer>
     </div>
 </body>
-
 </html>
